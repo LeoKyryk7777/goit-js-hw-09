@@ -22,7 +22,7 @@ form.addEventListener(`submit`, e => {
     if (!email || !message) {
         alert('Fill please all fields');
         return;
-    }
+    };
     const formData = { email, message };
      arr.push(formData);
     saveToLS('formData', arr);
