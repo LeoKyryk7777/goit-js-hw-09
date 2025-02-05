@@ -11,8 +11,6 @@ function initPage() {
     if (data) {
         form.elements.email.value = data.email || '';
         form.elements.message.value = data.message || '';
-        formData.email = data.email || '';
-        formData.message = data.message || '';
     }
 }
 initPage();
