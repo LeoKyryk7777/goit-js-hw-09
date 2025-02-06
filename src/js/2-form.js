@@ -5,7 +5,7 @@ form.addEventListener(`input`, e => {
     const formData = { email, message };
     saveToLS("feedback-form-state", formData) 
 });
-let arr = [];
+
 function initPage() {
     const data = loadFromLS("feedback-form-state");
     if (data) {
@@ -24,8 +24,6 @@ form.addEventListener(`submit`, e => {
         return;
     };
     const formData = { email, message };
-     arr.push(formData);
-    saveToLS('formData', arr);
     console.log(formData);
     e.target.reset();
     localStorage.removeItem("feedback-form-state");
